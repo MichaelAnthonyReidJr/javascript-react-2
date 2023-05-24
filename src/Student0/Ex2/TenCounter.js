@@ -4,8 +4,7 @@ import { useState } from "react"
 
 export const TenCounter = () => {
   let [counter, setCounter] = useState(0)
-
-  const handleOnClick = () => {
+  const handleOnClick = ({counter}) => {
     if (counter === 10) {
       setCounter(0)
     } else {
@@ -15,8 +14,8 @@ export const TenCounter = () => {
 
   return (
     <div className="Main">
-      <button onClick={() => handleOnClick()}>Push</button>
-      Counter: {counter}
+      <button onClick = {() => handleOnClick()}>Push</button>
+      Counter:{counter}
     </div>
   )
 }
