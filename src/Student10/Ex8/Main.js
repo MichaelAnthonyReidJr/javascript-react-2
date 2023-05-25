@@ -1,10 +1,12 @@
 import React from 'react'
 import './Main.css'
+import { AddCalculator } from './AddCalculator'
 
-export const Main = () => {
+const Main = () => {
   return (
     <div>
-      TODO...
+      <AddCalculator />
     </div>
   )
 }
+export default Main;
